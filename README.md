@@ -1,4 +1,4 @@
-head_first_csharp
+Head First C# labs
 =================
 
-Head First C# labs
+Code for the three labs from the "Head First C#" book.
