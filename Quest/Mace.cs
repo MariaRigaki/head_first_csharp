@@ -15,7 +15,14 @@ namespace Quest
 
         public override void Attack(Direction direction, Random random)
         {
-            // Your code goes here
+            int dir = (int) direction;
+
+            for (int i = 0; i < 4; i++)
+            {
+                dir += i;
+                DamageEnemy((Direction) (dir % 4), 20, 6, random);
+            }
+                
         }
     }
 }

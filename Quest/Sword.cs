@@ -20,11 +20,6 @@ namespace Quest
             DamageEnemy((Direction)(dir % 4), 15, 3, random);
             dir++;
             DamageEnemy((Direction)(dir % 4), 15, 3, random);
-
         }
-
-
-        
-        
     }
 }

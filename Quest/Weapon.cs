@@ -26,18 +26,18 @@ namespace Quest
         int damage, Random random)
         {
             Point target = game.PlayerLocation;
-            for (int distance = 0; distance < radius; distance++)
-            {
+            //for (int distance = 0; distance < radius; distance++)
+            //{
                 foreach (Enemy enemy in game.Enemies)
                 {
-                    if (Nearby(enemy.Location, target, distance))
+                    if (Nearby(enemy.Location, target, radius))
                     {
                         enemy.Hit(damage, random);
                         return true;
                     }
                 }
                 //target = Move(direction, target, game.Boundaries);
-            }
+           // }
             
             return false;
         }
